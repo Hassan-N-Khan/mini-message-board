@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
     <title>Mini Message Board</title>
 </head>
 <body>
-    Index Page
+    <h1>Mini Message Board</h1>
+    <h2>Messages:</h2>
+    <% if (messages.length === 0) { %>
+        <p>No messages yet. Be the first to post!</p>
+    <% } else { %>
+        <ul>
+            <% messages.forEach(message => { %>
+                <li><strong><%= message.user %>:</strong> <%= message.text %></li>
+            <% }) %>
+        </ul>
+    <% } %>
+
+    <button onclick="window.location.href='/new'">New Message</button>
 </body>
 </html>
