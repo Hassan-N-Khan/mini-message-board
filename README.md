@@ -18,6 +18,33 @@ This project demonstrates **Express routing**, **EJS views**, **form handling**,
 
 ---
 
+## 💻 Running Locally
+
+Follow these steps to set up and run the project on your local machine:
+
+1. **Clone the repository**
+   git clone https://github.com/yourusername/mini-message-board.git
+   cd mini-message-board
+
+2. **Install dependencies**
+   npm install
+
+3. **Start the development server**
+   node app.js
+
+   Or use auto-restart with:
+   node --watch app.js
+
+
+4. **Open in browser**
+   Visit: http://localhost:3000
+   You’ll see the message board homepage.
+   
+   <img width="1534" height="946" alt="image" src="https://github.com/user-attachments/assets/77a493c7-45ae-4a27-8fce-02f0276c66e7" />
+
+
+---
+
 ## 🔹 How to Use
 
 1. **View messages**  
